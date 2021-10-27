@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta name="renderer" content="webkit"/>
+    <meta name="force-rendering" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <script>if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode)) window.location.href="https://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); </script>
+    
+    
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Regular.woff2" as="font">
+        <link rel="preload" crossorigin="crossorigin" href="/fonts/roboto/Roboto-Bold.woff2" as="font">
+    
+    
+    
+        <link rel="shortcut icon" href="icons/frye_b_128.ico">
+    
+
+    
+    
+        
+<link rel="stylesheet" href="/css/mdui.min.v1.0.0.css">
+
+    
+    
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/iconfont.css">
+
+
+    
+    
+
+    
+        <script data-ad-client="ca-" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+    
+    
+    <title>
+        
+            用Markdown写博文 | 蒋羽博客
+        
+    </title>
+    
+    
+<meta name="generator" content="Hexo 5.4.0"></head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-teal mdui-theme-accent-black">
+  
+  <header class="mdui-appbar mdui-appbar-fixed">
+  <div id="toolbar" class="mdui-toolbar mdui-color-theme">
+    <button class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#sidebar', swipe: true}"><i class="iconfont icon-menu"></i></button>
+    <a href="/" class="mdui-typo-headline">蒋羽博客</a>
+    <a href="/" class="header-subtitle mdui-typo-headline">仰望星空 脚踏实地</a>
+    <div class="mdui-toolbar-spacer"></div>
+    <button class="mdui-btn mdui-btn-icon" mdui-dialog="{target: '#search'}" mdui-tooltip="{content: 'search'}"><i class="iconfont icon-search"></i></button>
+  </div>
+</header>
+
+<div class="mdui-dialog" id="search">
+  
+    <div class="search-form">
+      <input type="search" class="search-form-input" placeholder="请输入关键字" onfocus="listenSearchFunc()">
+    </div>
+    <div class="search-result" data-resource="/search.xml"></div>
+  
+</div>
+
+  <aside id="sidebar" class="mdui-drawer">
+    <div class="mdui-tab" mdui-tab>
+        <a href="#sidebar-tab1" id="sidebartab" class="mdui-ripple mdui-tab-active">站点概览</a>
+        <a href="#sidebar-tab2" id="sidebartab" class="mdui-ripple">关于</a>
+    </div>
+
+    
+    <div id="sidebar-tab1" class="mdui-p-a-1">
+        <div class="mdui-list">
+            
+                
+                <a href="/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-home"></i>
+                    </div>
+                    <div class="mdui-list-item-content">主页</div>
+                </a>
+            
+                
+                <a href="/tags/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-bookmark"></i>
+                    </div>
+                    <div class="mdui-list-item-content">标签</div>
+                </a>
+            
+                
+                <a href="/categories/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-folder"></i>
+                    </div>
+                    <div class="mdui-list-item-content">分类</div>
+                </a>
+            
+                
+                <a href="/archives/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-archive"></i>
+                    </div>
+                    <div class="mdui-list-item-content">归档</div>
+                </a>
+            
+                
+                <a href="/about-me/" class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-user"></i>
+                    </div>
+                    <div class="mdui-list-item-content">关于</div>
+                </a>
+            
+            <div class="mdui-list-item mdui-ripple">
+                <div class="mdui-list-item-icon">
+                    <i class="iconfont icon-moon"></i>
+                </div>
+                <div class="mdui-list-item-content">夜间模式</div>
+                <label class="mdui-switch" id="darkmode">
+                  <input type="checkbox" id="nightmode_switch"/>
+                  <i class="mdui-switch-icon"></i>
+                </label>
+            </div>           
+        </div>
+    </div>
+
+    
+    <div id="sidebar-tab2" class="mdui-p-a-1">
+        <div class="sidebar-overview">
+            <div class="sidebar-avatar">
+                
+                    <img src="/icons/avatar.gif"/>
+                
+            </div>
+            <div class="sidebar-author-name">蒋羽</div>
+            <div class="sidebar-description"></div>
+        </div>
+        <div class="sidebar-links">
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-mail"></i></span>
+                    <a href="/frye_jiang@163.com" class="mdui-chip-title">E-Mail</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-github"></i></span>
+                    <a target="_blank" rel="noopener" href="https://github.com/FryeJiang" class="mdui-chip-title">GitHub</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-zhihu"></i></span>
+                    <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/jiang-yu-594-87" class="mdui-chip-title">Zhihu</a>
+                </div>
+            
+                
+                <div class="mdui-chip">
+                    <span class="mdui-chip-icon"><i class="iconfont icon-steam"></i></span>
+                    <a target="_blank" rel="noopener" href="https://steamcommunity.com/id/fryejiang/" class="mdui-chip-title">Steam</a>
+                </div>
+            
+        </div>
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+            <li class="mdui-collapse-item">
+                <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-icon">
+                        <i class="iconfont icon-link"></i>
+                    </div>
+                    <div class="mdui-list-item-content">友情链接</div>
+                    <div class="mdui-collapse-item-arrow">
+                        <i class="mdui-list-item-icon iconfont icon-angle-down"></i>
+                    </div>
+                </div>
+                <ul id="linksList" class="mdui-collapse-item-body mdui-list mdui-list-dense">
+                    
+                        <a target="_blank" rel="noopener" href="https://garybear.cn/hexo-theme-meadow/" class="mdui-list-item mdui-ripple">
+                            Meadow说明文档
+                        </a>
+                    
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="mdui-divider"></div>
+    
+    
+</aside>
+  
+  <main id="main-contain" class="mdui-container mdui-m-t-5">
+    <article id="article" class="mdui-card mdui-p-b-2 mdui-m-b-5">
+  <header class="mdui-card-media">
+    
+    
+      <div class="post-header"> 
+  <a class="post-header-title" href="/2021/10/26/%E7%94%A8Markdown%E5%86%99%E5%8D%9A%E5%AE%A2/">用Markdown写博文</a>
+  <div class="post-header-meta">
+    <span>
+      <span class="iconfont icon-calendar"></span>
+      发布于:&nbsp;2021-10-26
+    </span>
+    <span>
+      <span class="iconfont icon-calendar-check"></span>
+      更新于:&nbsp;2021-10-27
+    </span>
+    <span>
+      <span class="iconfont icon-folder"></span>
+      分类于:&nbsp;<a class="category-link" href="/categories/%E5%B7%A5%E5%85%B7/">工具</a>
+    </span>
+    
+      <span>
+        <span class="iconfont icon-eye"></span>
+        阅读次数:&nbsp;
+        <span id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv"></span></span>
+      </span>
+    
+  </div>
+</div>   
+    
+
+
+
+    
+    
+    <div class="mdui-card-menu">
+    
+      <button class="mdui-btn mdui-btn-icon mdui-text-color-teal" mdui-menu="{target: '#share_menu', align: 'right'}"><i class="iconfont icon-share"></i></button>
+      <ul class="mdui-menu" id="share_menu">
+        <li class="mdui-menu-item">
+          <a href="http://service.weibo.com/share/share.php?appkey=&title=用Markdown写博文&url=http://example.com/2021/10/26/%E7%94%A8Markdown%E5%86%99%E5%8D%9A%E5%AE%A2/&pic=http://example.com/icons/frye_b_128.ico&searchPic=false&style=simple" target="_blank" class="mdui-ripple">分享到 Weibo</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://twitter.com/intent/tweet?text=用Markdown写博文&url=http://example.com/2021/10/26/%E7%94%A8Markdown%E5%86%99%E5%8D%9A%E5%AE%A2/&via=蒋羽" target="_blank" class="mdui-ripple">分享到 Twitter</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=http://example.com/2021/10/26/%E7%94%A8Markdown%E5%86%99%E5%8D%9A%E5%AE%A2/" target="_blank" class="mdui-ripple">分享到 Facebook</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://plus.google.com/share?url=http://example.com/2021/10/26/%E7%94%A8Markdown%E5%86%99%E5%8D%9A%E5%AE%A2/" target="_blank" class="mdui-ripple">分享到 Google+</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://example.com/2021/10/26/%E7%94%A8Markdown%E5%86%99%E5%8D%9A%E5%AE%A2/&title=用Markdown写博文" target="_blank" class="mdui-ripple">分享到 LinkedIn</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="http://connect.qq.com/widget/shareqq/index.html?site=蒋羽博客&title=用Markdown写博文&summary=&pics=http://example.com/icons/frye_b_128.ico&url=http://example.com/2021/10/26/%E7%94%A8Markdown%E5%86%99%E5%8D%9A%E5%AE%A2/" target="_blank" class="mdui-ripple">分享到 QQ</a>
+        </li>
+        <li class="mdui-menu-item">
+          <a href="https://telegram.me/share/url?url=http://example.com/2021/10/26/%E7%94%A8Markdown%E5%86%99%E5%8D%9A%E5%AE%A2/&text=用Markdown写博文" target="_blank" class="mdui-ripple">分享到 Telegram</a>
+        </li>
+      </ul>
+    
+  </div>
+  </header>
+  
+  
+  
+  
+  <div class="post-tags">
+    
+      <i class="iconfont icon-tag">
+        <a rel="tag" href = /tags/Markdown/ >Markdown</a>
+      </i>
+    
+  </div>
+
+  
+  <div class="mdui-card-content mdui-typo mdui-p-x-4">
+    <h1 id="什么是Markdown"><a href="#什么是Markdown" class="headerlink" title="什么是Markdown"></a>什么是Markdown</h1><p>根据知乎话题的简介</p>
+<blockquote>
+<p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
+<p>Markdown具有一系列衍生版本，用于扩展Markdown的功能（如表格、脚注、内嵌HTML等等），这些功能原初的Markdown尚不具备，它们能让Markdown转换成更多的格式，例如LaTeX，Docbook。Markdown增强版中比较有名的有Markdown Extra、MultiMarkdown、 Maruku等。</p>
+<p>这些衍生版本要么基于工具，如Pandoc；要么基于网站，如GitHub和Wikipedia，在语法上基本兼容，但在一些语法和渲染效果上有改动。</p>
+</blockquote>
+<hr>
+<h1 id="为什么用Markdown"><a href="#为什么用Markdown" class="headerlink" title="为什么用Markdown"></a>为什么用Markdown</h1><p>Markdown拥有以下优点</p>
+<ul>
+<li>纯文本，兼容性极强，可以用所有文本编辑器打开</li>
+<li>极大地减轻排版压力，提高码字效率</li>
+<li>适用性广。很多平台都支持Markdown</li>
+<li>学习成本低。Markdown的语法很简单，几分钟到十几分钟就能学会。</li>
+<li>转换成其他格式非常方便</li>
+</ul>
+<hr>
+<h1 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>Markdown支持两种标题语法。</p>
+<p>第一种为<code>标题</code>加分割线的形式。</p>
+<p>在下一行使用<strong>连续不少于2个</strong><code>=</code>表示一级标题；在下一行使用<strong>连续不少于2个</strong><code>-</code>表示二级标题。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">一级标题</span><br><span class="line">==</span><br><span class="line">二级标题</span><br><span class="line">--</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><p>第二种为若干个<code>#</code>+<code>(空格)</code>+<code>标题</code>的形式。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">··· ····</span><br><span class="line">##### 五级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><p>··· ····</p>
+<h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h2 id="段落分行"><a href="#段落分行" class="headerlink" title="段落分行"></a>段落分行</h2><p>换行：在段尾使用不少于2个<code>空格</code>+<code>回车</code>来进行换行。<br>分段：使用一段<strong>完整的空行</strong>作为段落间隔。毕竟拥挤着的文字读起来太累了。</p>
+<h2 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a>区块引用</h2><p>引用只需要在需要引用的文字前使用<code>&gt;</code>+<code>空格</code>即可。引用可嵌套使用。多段引用只需要在每一段之前，包括段落间空行，使用<code>&gt;</code>+<code>空格</code>。用例如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; 引文第一段</span><br><span class="line">&gt;</span><br><span class="line">&gt; 引文第二段</span><br><span class="line">&gt;&gt; 内嵌的引文</span><br><span class="line">&gt; ## 这是引文的标题</span><br><span class="line">&gt; 此外引文还可以**正常使用其他Markdown语法标记**</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<blockquote>
+<p>引文第一段</p>
+<p>引文第二段</p>
+<blockquote>
+<p>内嵌的引文</p>
+</blockquote>
+<h2 id="这是引文的标题"><a href="#这是引文的标题" class="headerlink" title="这是引文的标题"></a>这是引文的标题</h2><p>此外引文还可以<strong>正常使用其他Markdown语法标记</strong></p>
+</blockquote>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><h4 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h4><p>使用<code>+</code>, <code>-</code>, <code>*</code> + <code>空格</code>来标注。嵌套列表需要使用<code>Tab</code>或多个<code>空格</code>。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* 条目1</span><br><span class="line">* 条目2</span><br><span class="line">    * 条目2.1</span><br><span class="line">    * 条目2.2</span><br><span class="line">* 条目3</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<ul>
+<li>条目1</li>
+<li>条目2<ul>
+<li>条目2.1</li>
+<li>条目2.2</li>
+</ul>
+</li>
+<li>条目3</li>
+</ul>
+<h4 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h4><p>使用<code>数字</code> + <code>.</code> + <code>空格</code>来标注。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. 项目1</span><br><span class="line">2. 项目2</span><br><span class="line">    1. 项目2.1</span><br><span class="line">    2. 项目2.2</span><br><span class="line">3. 项目3</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<ol>
+<li>项目1</li>
+<li>项目2<ol>
+<li>项目2.1</li>
+<li>项目2.2</li>
+</ol>
+</li>
+<li>项目3</li>
+</ol>
+<h2 id="文字强调"><a href="#文字强调" class="headerlink" title="文字强调"></a>文字强调</h2><p>Markdown使用<code>*</code>或<code>_</code>来强调文字。<br>被<code>*</code>或<code>_</code>包括的文字为斜体。<br>被<code>**</code>或<code>__</code>包括的文字为粗体。<br>被<code>***</code>或<code>___</code>包括的文字为粗斜体。<br>被<code>~~</code>包括的文字会被添加删除线。<br>用HTML的<code>&lt;u&gt;</code>和<code>&lt;/u&gt;</code>包括的文字会被添加下划线。<br>例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">*斜体* _斜体_</span><br><span class="line">**粗体** __粗体__</span><br><span class="line">***粗斜体*** ___粗斜体___</span><br><span class="line">~~删除线~~</span><br><span class="line">&lt;u&gt;下划线&lt;/u&gt;</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p><em>斜体</em> <em>斜体</em><br><strong>粗体</strong> <strong>粗体</strong><br><em><strong>粗斜体</strong></em> <em><strong>粗斜体</strong></em><br><del>删除线</del><br><u>下划线</u></p>
+<p>Markdown还可以添加脚注。语法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[^脚注名称]</span><br><span class="line"></span><br><span class="line">[^脚注名称]:脚注内容</span><br></pre></td></tr></table></figure>
+<p>效果为<a href="%22%E8%84%9A%E6%B3%A8%E5%86%85%E5%AE%B9%22">^脚注名称</a></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><p>Markdown中被标识为代码的字段都会被<strong>原封不动</strong>的显示出来。这也是前文中展示各种语法原型示例的方法。</p>
+<p>行内使用一对<code>反引号</code>，一般位于Esc键下方，进行包括标识。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这里是一段行内代码`int a = 0;`。</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p>这里是一段行内代码<code>int a = 0;</code>。</p>
+<p>至于代码块，可以使用一对连续的3个反引号将整个代码区块上下包括起来。可以在第一组反引号后标注语言。</p>
+<h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>在一行中使用不少于3个的<code>*</code>, <code>-</code>, <code>_</code>来表示一条分割线。这一行不能有其他东西。我觉得还可以自己插入一些分割线图片来分割也是很不错的选择。</p>
+<h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p>链接有3种表示方式。除了直接显示，还有两种我分别称之为直接定义式和先声明后定义式。</p>
+<h4 id="直接显示"><a href="#直接显示" class="headerlink" title="直接显示"></a>直接显示</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;https://www.bing.com&gt;</span><br></pre></td></tr></table></figure>
+<p>效果为<a target="_blank" rel="noopener" href="https://www.bing.com/">https://www.bing.com</a>。</p>
+<h4 id="直接定义式"><a href="#直接定义式" class="headerlink" title="直接定义式"></a>直接定义式</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[链接名称](链接地址)</span><br><span class="line">[链接名称](链接地址 &quot;链接注释，将鼠标悬停于其上显示的内容&quot;) </span><br><span class="line">这是[必应](https://www.bing.com)</span><br><span class="line">这是一条[空链接 把鼠标悬停在这里](#no-link &quot;这确实是空链接&quot;)</span><br></pre></td></tr></table></figure>
+<p>效果如下：</p>
+<p>这是<a target="_blank" rel="noopener" href="https://www.bing.com/">必应</a></p>
+<p>这是一条<a href="#no-link" title="这确实是空链接">空链接 把鼠标悬停在这里</a></p>
+<h4 id="先声明后定义式"><a href="#先声明后定义式" class="headerlink" title="先声明后定义式"></a>先声明后定义式</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[链接名称][自定义标识符]</span><br><span class="line">然后在文尾对自定义标识符进行赋值。</span><br><span class="line">[自定义标识符]：链接地址</span><br><span class="line">[必应][bing_site]</span><br><span class="line">[bing_site]:https://www.bing.com</span><br></pre></td></tr></table></figure>
+<p>效果为<a target="_blank" rel="noopener" href="https://www.bing.com/">必应</a></p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>图片的插入与链接很类似，只需要在链接的语法前+<code>!</code>就行了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">![替代文字](图片地址)</span><br><span class="line">![替代文字](图片地址 &quot;可选图片标题&quot;)</span><br><span class="line">![替代文字][自定义标识符]</span><br><span class="line"></span><br><span class="line">[自定义标识符]: 图片地址 &quot;可选图片标题&quot;</span><br></pre></td></tr></table></figure>
+<p>其中替代文字是指图片没有加载成功时，代替图片显示的文字。</p>
+<p>如果加载成功下面会有一棵树。<br><img src="images/wood.jpg" alt="这应该是一棵树" title="孤木">  </p>
+<p>下面就是加载不成功时显示的样子：<br><img src="#no-link" alt="这应该是一棵树"></p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>Markdown使用<code>|</code>和<code>-</code>来制作表格。感觉有点简陋。语法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| 表头1 | 表头2 | 表头3 | 表头4 |</span><br><span class="line">| ---- | :--- | ---: | :--: |</span><br><span class="line">|默认样式|这一列|这一列|这一列|</span><br><span class="line">|的单元格|会左对齐|会右对齐|居中对齐|</span><br></pre></td></tr></table></figure>
+<p>效果如下：<br>| 表头1 | 表头2 | 表头3 | 表头4 |<br>| —– | :—- | —-: | :—: |<br>|默认样式| 这一列 | 这一列 | 这一列 |<br>|的单元格|会左对齐|会右对齐|居中对齐|</p>
+<p>其中表格第二行的符号<code>:--</code>, <code>--:</code>, <code>:-:</code>控制对齐方式，<code>-</code>不少于1个。</p>
+<h2 id="转义符号"><a href="#转义符号" class="headerlink" title="转义符号"></a>转义符号</h2><p>有时候我们写文章时需要显示Markdown语法中的符号，而非将其当做Markdown的标记符号，这时就需要使用转义符号了。这跟代码很像。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">**正常加粗**</span><br><span class="line">\*\*正常显示星号\*\*</span><br></pre></td></tr></table></figure>
+<p>效果为<strong>正常加粗</strong>，**正常显示星号**。</p>
+<p>其它转义符号也是类似的写法，都是<code>\</code>+需要转义的符号。Markdown支持以下符号的转义： </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\   反斜杠</span><br><span class="line">`   反引号</span><br><span class="line">*   星号</span><br><span class="line">_   下划线</span><br><span class="line">&#123;&#125;  花括号</span><br><span class="line">[]  方括号</span><br><span class="line">()  普通括号</span><br><span class="line">#   井字号</span><br><span class="line">+   加号</span><br><span class="line">-   减号</span><br><span class="line">.   实心句点</span><br><span class="line">!   感叹号</span><br></pre></td></tr></table></figure>
+
+<h2 id="进阶用法"><a href="#进阶用法" class="headerlink" title="进阶用法"></a>进阶用法</h2><h4 id="Markdown支持HTML的语法"><a href="#Markdown支持HTML的语法" class="headerlink" title="Markdown支持HTML的语法"></a><a id=HTML_in_Markdown></a>Markdown支持HTML的语法</h4><p>可以使用一些HTML的语法来实现一些稍微复杂的功能。当然，个人感觉用太多HTML语法会使Markdown原文本的可读性变差，一堆标签的话就违背了我使用Markdown写文章的初心了。因此，下面只介绍几种可能会常用的功能。</p>
+<h5 id="一些实用的标签"><a href="#一些实用的标签" class="headerlink" title="一些实用的标签"></a>一些实用的标签</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;kbd&gt;键盘文本&lt;/kbd&gt;</span><br><span class="line">&lt;sup&gt;上标文本&lt;/sup&gt;</span><br><span class="line">&lt;sub&gt;下标文本&lt;/sub&gt;</span><br><span class="line">&lt;center&gt;居中文本&lt;/center&gt;</span><br></pre></td></tr></table></figure>
+<p>效果为<kbd>键盘文本</kbd>，<sup>上标文本</sup>，<sub>下标文本</sub>  </p>
+<center>居中文本</center>
+
+<h5 id="图片标签"><a href="#图片标签" class="headerlink" title="图片标签"></a>图片标签</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=图片地址 width=&quot;宽度&quot; height=&quot;高度&quot; alt=&quot;替代文字&quot; title=&quot;可选标题&quot;/&gt;</span><br><span class="line">其中，src和alt是必要的属性,宽度与高度的单位均为像素。</span><br></pre></td></tr></table></figure>
+<img src=images/wood.jpg width=160 height alt=这是一棵树 title=孤木 />
+
+<p>相较于Markdown自身插入图片的语法，HTML的<code>&lt;img&gt;</code>标签更多用途的是可以指定图片的大小，这在某些场景中还是比较实用的。</p>
+<h5 id="多行空白行"><a href="#多行空白行" class="headerlink" title="多行空白行"></a>多行空白行</h5><p>当我们需要多行空白行时，就可以使用标签<code>&lt;br&gt;</code>。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">段落1</span><br><span class="line">&lt;br&gt;&lt;br&gt;&lt;br&gt;</span><br><span class="line">段落2</span><br></pre></td></tr></table></figure>
+<p>其中<code>n</code>个<code>&lt;br&gt;</code>标签会创建<code>n-1</code>个空白行。效果为：<br>段落1<br>    <br><br><br><br>段落2</p>
+<p>至于为什么要多一个<code>&lt;br&gt;</code>，是因为<code>&lt;br&gt;</code>只是简单地插入了一个换行符。</p>
+<p>另外<code>&lt;br&gt;</code>是一个空标签，这意味着它没有结束标签，不能写作<code>&lt;br&gt;</code> <code>&lt;/br&gt;</code>的形式。而在XHTML中，<code>&lt;br&gt;</code>写作<code>&lt;br/&gt;</code>，即把结束标签放在开始标签中。</p>
+<h5 id="锚点链接"><a href="#锚点链接" class="headerlink" title="锚点链接"></a>锚点链接</h5><p>最后一个要介绍的就是HTML的<code>&lt;a&gt;</code>锚点标签了。语法如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;a id=&quot;id_name&quot;&gt;&lt;/a&gt;</span><br><span class="line">[链接名称](#id_name &quot;可选的链接注释&quot;)</span><br></pre></td></tr></table></figure>
+<p>在文档的目标处写好<code>&lt;a&gt;</code>标签，然后设置链接，效果为<a href="#HTML_in_Markdown" title="Markdown支持HTML的语法">点击这里回到标题-Markdown支持HTML的语法</a>。</p>
+<h4 id="数学公式"><a href="#数学公式" class="headerlink" title="数学公式"></a>数学公式</h4><p>类似于代码的语法，这里使用<code>$</code>和<code>$$</code>包括所需要展示的行内数学公式和公式块。公式格式为TeX或LaTeX，上传后需要加载Mathjax对公式进行渲染。例如：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">这是一个单位圆公式：$x^2+y^2=1$</span><br><span class="line">下面是一元二次方程的两个根：$$x=\dfrac&#123;-b\pm\sqrt&#123;b^2-4ac&#125;&#125;&#123;2a&#125;$$</span><br></pre></td></tr></table></figure>
+<p>这是一个单位圆公式：$x^2+y^2=1$<br>下面是一元二次方程的两个根：<br>$$x=\dfrac{-b\pm\sqrt{b^2-4ac}}{2a}$$</p>
+<h4 id="流程图-时序图-甘特图"><a href="#流程图-时序图-甘特图" class="headerlink" title="流程图 时序图 甘特图"></a>流程图 时序图 甘特图</h4><p>这里我暂时是用不上，有空查一查怎么使用，以后更新吧。</p>
+<h1 id="Markdown编辑器"><a href="#Markdown编辑器" class="headerlink" title="Markdown编辑器"></a>Markdown编辑器</h1><p>我使用的是Visual Studio Code + 插件<code>Markdown All in One</code> + 插件 <code>Markdown Preview Github Styling</code>。可以分屏显示，同屏滚动，很安逸，很舒服。</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>本文作为我的第一篇博文，主要梳理了一下Markdown的语法。内容应该算比较简洁了，希望对读者也能有所帮助。不过话说Markdown的语法确实简单，看一遍，再用它写一遍文章基本就会了。对于专注于文字创作的人来说确实比较好用。</p>
+<hr>
+<h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><ol>
+<li>[KChen`s Blog](<a target="_blank" rel="noopener" href="https://kchen.cc/2015/10/05/Markdown-Manual/#%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8-Markdown">https://kchen.cc/2015/10/05/Markdown-Manual/#%E6%88%91%E4%BB%AC%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E4%BD%BF%E7%94%A8-Markdown</a> “Markdown 入门-最轻量的文字编辑语言”)</li>
+<li><a target="_blank" rel="noopener" href="https://www.runoob.com/markdown/md-tutorial.html">RUNOOB.COM</a></li>
+<li><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/271394570" title="Markdown使用技巧总结——缩进，空格，字体，颜色，字号，图片等">Rome的知乎专栏</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/tags/index.asp" title="HTML标签参考手册">W3school的HTML标签参考手册</a></li>
+</ol>
+
+  </div>
+  <!--文末结束语-->
+  
+    <div style="text-align:center;color: #ccc;font-size:24px;"> --- 本文结束 <i class="iconfont icon-heartbeat" style="font-size:24px;"></i> The End --- </div>
+  
+  <!--页脚广告-->
+  
+  <div class="mdui-divider"></div>
+  
+  <nav>
+    
+    
+      <a rel="next" class="post-nav-item mdui-float-right" href="/2021/10/19/%E6%92%B0%E5%86%99%E5%8D%9A%E6%96%87/">
+        <span>撰写博文</span>
+        <i class="iconfont icon-angle-right"></i>
+      </a>
+    
+  </nav>
+</article>
+
+
+
+
+  <div class="toc-button"  style="z-index: 100;">
+    <button class="mdui-fab mdui-ripple mdui-color-teal" mdui-menu="{target: '#toc'}"><i class="iconfont icon-list"></i></button>
+    <ul class="mdui-menu" id="toc">
+      <li class="mdui-menu-item">
+        <a href="/2021/10/26/%E7%94%A8Markdown%E5%86%99%E5%8D%9A%E5%AE%A2/" id="toc-header" class="mdui-ripple">文章目录</a>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFMarkdown"><span class="toc-number">1.</span> <span class="toc-text">什么是Markdown</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8Markdown"><span class="toc-number">2.</span> <span class="toc-text">为什么用Markdown</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown%E8%AF%AD%E6%B3%95"><span class="toc-number">3.</span> <span class="toc-text">Markdown语法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E9%A2%98"><span class="toc-number">3.1.</span> <span class="toc-text">标题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">4.</span> <span class="toc-text">一级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">4.1.</span> <span class="toc-text">二级标题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98-1"><span class="toc-number">5.</span> <span class="toc-text">一级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E7%BA%A7%E6%A0%87%E9%A2%98-1"><span class="toc-number">5.1.</span> <span class="toc-text">二级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BA%94%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">5.1.0.0.1.</span> <span class="toc-text">五级标题</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#%E5%85%AD%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="toc-number">5.1.0.0.1.1.</span> <span class="toc-text">六级标题</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AE%B5%E8%90%BD%E5%88%86%E8%A1%8C"><span class="toc-number">5.2.</span> <span class="toc-text">段落分行</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8C%BA%E5%9D%97%E5%BC%95%E7%94%A8"><span class="toc-number">5.3.</span> <span class="toc-text">区块引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%99%E6%98%AF%E5%BC%95%E6%96%87%E7%9A%84%E6%A0%87%E9%A2%98"><span class="toc-number">5.4.</span> <span class="toc-text">这是引文的标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%97%E8%A1%A8"><span class="toc-number">5.5.</span> <span class="toc-text">列表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">5.5.0.1.</span> <span class="toc-text">无序列表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-number">5.5.0.2.</span> <span class="toc-text">有序列表</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E5%AD%97%E5%BC%BA%E8%B0%83"><span class="toc-number">5.6.</span> <span class="toc-text">文字强调</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">5.7.</span> <span class="toc-text">代码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-number">5.8.</span> <span class="toc-text">分割线</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%BE%E6%8E%A5"><span class="toc-number">5.9.</span> <span class="toc-text">链接</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B4%E6%8E%A5%E6%98%BE%E7%A4%BA"><span class="toc-number">5.9.0.1.</span> <span class="toc-text">直接显示</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B4%E6%8E%A5%E5%AE%9A%E4%B9%89%E5%BC%8F"><span class="toc-number">5.9.0.2.</span> <span class="toc-text">直接定义式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%88%E5%A3%B0%E6%98%8E%E5%90%8E%E5%AE%9A%E4%B9%89%E5%BC%8F"><span class="toc-number">5.9.0.3.</span> <span class="toc-text">先声明后定义式</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%BE%E7%89%87"><span class="toc-number">5.10.</span> <span class="toc-text">图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A8%E6%A0%BC"><span class="toc-number">5.11.</span> <span class="toc-text">表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BD%AC%E4%B9%89%E7%AC%A6%E5%8F%B7"><span class="toc-number">5.12.</span> <span class="toc-text">转义符号</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E9%98%B6%E7%94%A8%E6%B3%95"><span class="toc-number">5.13.</span> <span class="toc-text">进阶用法</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Markdown%E6%94%AF%E6%8C%81HTML%E7%9A%84%E8%AF%AD%E6%B3%95"><span class="toc-number">5.13.0.1.</span> <span class="toc-text">Markdown支持HTML的语法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E5%AE%9E%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE"><span class="toc-number">5.13.0.1.1.</span> <span class="toc-text">一些实用的标签</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%9B%BE%E7%89%87%E6%A0%87%E7%AD%BE"><span class="toc-number">5.13.0.1.2.</span> <span class="toc-text">图片标签</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A4%9A%E8%A1%8C%E7%A9%BA%E7%99%BD%E8%A1%8C"><span class="toc-number">5.13.0.1.3.</span> <span class="toc-text">多行空白行</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E9%94%9A%E7%82%B9%E9%93%BE%E6%8E%A5"><span class="toc-number">5.13.0.1.4.</span> <span class="toc-text">锚点链接</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F"><span class="toc-number">5.13.0.2.</span> <span class="toc-text">数学公式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%81%E7%A8%8B%E5%9B%BE-%E6%97%B6%E5%BA%8F%E5%9B%BE-%E7%94%98%E7%89%B9%E5%9B%BE"><span class="toc-number">5.13.0.3.</span> <span class="toc-text">流程图 时序图 甘特图</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">6.</span> <span class="toc-text">Markdown编辑器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-number">7.</span> <span class="toc-text">结语</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">8.</span> <span class="toc-text">参考</span></a></li></ol>
+      </li>
+    </ul>
+  </div>
+
+
+
+    <div id="comment" class="mdui-card mdui-p-a-2 mdui-m-b-5">
+      <div class="mdui-tab" mdui-tab>
+        
+          <a href="#comment-tab0" class="mdui-ripple">gitalk</a>
+        
+          <a href="#comment-tab1" class="mdui-ripple">valine</a>
+        
+      </div>
+      
+        <div id="comment-tab0" class="mdui-p-a-2">
+          <div id="gitalk-container"></div>
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id:  md5(location.pathname) ,
+    distractionFreeMode: 'true',
+  });
+  gitalk.render('gitalk-container');
+</script>
+        </div>
+      
+        <div id="comment-tab1" class="mdui-p-a-2">
+          <div id="vcomments"></div>
+<script src="//cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var guest_info = ''.split(',').filter(function (item) {
+    return GUEST_INFO.indexOf(item) > -1;
+  });
+  var notify = '' === 'true';
+  var verify = '' === 'true';
+  new Valine({
+    el: '#vcomments',
+    notify: notify,
+    verify: verify,
+    appId: '',
+    appKey: '',
+    placeholder: '',
+    pageSize: '',
+    avatar: '',
+    lang: '',
+    guest_info: guest_info
+  });
+</script>
+        </div>
+      
+    </div>
+
+  </main>
+  <footer id="footer" class="mdui-text-center mdui-m-t-5 mdui-p-b-2 mdui-p-t-4 mdui-color-theme">
+  <div class="mdui-container">
+    <div class="mdui-row">
+      
+        <a href="https://beian.miit.gov.cn" rel="noopener" target="_blank"></a>
+      
+      <span>
+        &copy; 2021 - 2021 
+        
+          <span style="color:#d9333f" class="iconfont icon-heart"></span>
+        
+        蒋羽
+      </span>
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span>Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span>Theme: <a href="https://github.com/kb1000fx/Meadow" rel="noopener" target="_blank">Meadow</a></span>
+        </div>
+      
+    </div>
+    <div class="mdui-row">
+      
+        <div class="mdui-col-xs-6 mdui-text-right">
+          <span id="busuanzi_container_site_uv" style="display: none;"> <span class="iconfont icon-user"></span>总访客量 <span id="busuanzi_value_site_uv"></span></span>
+        </div>
+        <div class="mdui-col-xs-6 mdui-text-left">
+          <span id="busuanzi_container_site_pv" style="display: none;"> <span class="iconfont icon-eye"></span>总访问量 <span id="busuanzi_value_site_pv"></span></span>
+        </div>
+      
+    </div>
+ </div>
+</footer>
+  
+  <button id="gotop" class="mdui-fab mdui-fab-fixed mdui-fab-hide mdui-ripple mdui-color-teal" style="z-index:100;"><i class="iconfont icon-arrowup"></i></button>
+  
+  
+
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.4.8/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({
+        startOnLoad: true,
+        theme: "default"
+    });</script>
+
+
+
+
+    
+<script src="/js/mdui.min.v1.0.0.js"></script>
+
+
+
+
+<script src="/js/meadow.js"></script>
+
+</body>
+</html >
